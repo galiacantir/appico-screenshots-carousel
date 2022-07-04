@@ -1,0 +1,85 @@
+ body{
+    font-family: 'Poppins', sans-serif;
+    margin: 50px 0;
+    background-color: #333;
+    color: whitesmoke;
+ }
+
+ .container{
+    width: 1100px;
+    margin: 0 auto;
+ }
+
+ header{
+   margin: 20px 0 50px;
+   text-align: center;
+ }
+
+ .screenshots{
+    text-align: center;
+ }
+
+ .screenshots h1 {
+    font-weight: 700;
+    font-size: 36px;
+    margin: 10px; 
+ }
+
+ .screenshots p{
+   font-size: 18px;
+   line-height: 1.6;
+ }
+
+ .screenshots .g-carousel img{
+    width: 100%;
+    border: 1px solid black;
+    transition: 0.5s;
+ }
+
+ .screenshots .g-carousel img{
+    transform: scale(0.6);
+ }
+
+ .screenshots .g-carousel .slick-current + div img, 
+ .screenshots .g-carousel .slick-current + div + div + div img{
+    transform: scale(0.8);
+ }
+
+ .screenshots .g-carousel .slick-current + div + div img{
+    transform: scale(1.0);
+ }
+
+/* --- mockup mobile --- */
+
+.g-carousel::before{
+   content: "";
+   width: 240px;
+   height: 460px;
+   background-color: #ece9e9;
+   position: absolute;
+   top: -40px;
+   left: 423px;
+   border-radius: 25px;
+   border: 8px solid #857f84;
+}
+
+.g-carousel:after{
+   content: "";
+   width: 40px;
+   height: 40px;
+   border-radius: 100%;
+   border: 2px solid #857f84;
+   background-color:#ece9e9;
+   position: absolute;
+   bottom: -50px;
+   left: 530px
+}
+
+.slick-prev:before, .slick-next::before {
+   
+   font-size: 24px;
+   line-height: 1;
+   opacity: .75;
+   color: #ece9e9;
+   
+}
